@@ -2,13 +2,65 @@
 <html>
     <head>
         <title>Example Address</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScboLtq2J_vnER8QZRa5o0UPMomKi4m3Pl8Q&usqp=CAU">
+        <style>
+            body{
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200804/pngtree-gradient-bright-color-background-simple-style-image_377138.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
 
     <body>
-        <address>
-            13, huangjiamali
-            street minwangxing,
-            Wa No Kuni 
-        </address>
+        <h2 id="Img intro">Img Tag In HTML</h2>
+        <pre style="font-size: 15px; padding: 5px 4px;">
+            The HTML img tag is used to embed an image in a web page.
+
+            <b>Images are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding space for the referenced image.
+            
+            The img tag is empty, it contains attributes only, and does not have a closing tag.</b>
+            
+            The img tag has two required attributes:
+            
+            src - Specifies the path to the image
+            alt - Specifies an alternate text for the image
+        </pre>
+
+        <p style="font-size: 20px;">
+            The required src attribute specifies the path (URL) to the image.
+            <br>
+            <b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+        </p>
+
+        <br><br>
+        
+        <!--map function in image, when user click specific area inside the image could go other link, the area define with coordinate-->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEezCzRjcdKaREgR9qzLndHvIw4i6K8N1SaQ&usqp=CAU" alt="Genshin Impact" usemap="#genshin" style="width: 480px; height: 300px;"/>
+
+        <map name="#genshin">
+            <area shape="rect" coords="0,0,240,300" href="https://wiki.biligame.com/ys/%E5%A4%8F%E6%B4%9B%E8%92%82" alt="夏洛蒂">
+            <area shape="rect" coords="241,1,479,300" href="https://wiki.biligame.com/ys/%E8%8A%99%E5%AE%81%E5%A8%9C" alt="芙宁娜">
+        </map>
+
+        <br><br>
+
+        <p style="font-size: 20px;">Actually there is a tag similar with image, it is picture tag.</p>
+        <pre style="font-size: 20px;">
+            There are two main purposes for the <picture> element:
+
+                1. Bandwidth
+                If you have a small screen or device, it is not necessary to load a large image file. The browser will use 
+                the first source element with matching attribute values, and ignore any of the following elements.
+                
+                2. Format Support
+                Some browsers or devices may not support all image formats. By using the picture element, you can add images
+                of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+        </pre>
+
+        <br><br>
+
+        <!-- 就算是text，只要加上了javascript的 "onclick" function 也可以跳到其它页面-->
+        <p onclick="document.location='index.html'">Home Page</p>
     </body>
 </html>

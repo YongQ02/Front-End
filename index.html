@@ -4,13 +4,15 @@
         <head>
             <!-- This is website title -->
             <title>YongQ02 Profile</title>
+            <!-- This is icon of the webpage -->
+            <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScboLtq2J_vnER8QZRa5o0UPMomKi4m3Pl8Q&usqp=CAU">
         </head>
 
         <!--The whole background color will be black. -->
         <body style="background-color: rgb(238, 130, 238, 0.5);">
 
-            <!-- This is the Head Title for this webpage -->
-            <h1 style="color: black; font-size: 40px;">俺様のGitHub</h1>
+            <!-- This is the Head Title for this webpage, use ID keyword to create the bookmark -->
+            <h1 style="color: black; font-size: 40px;" id="title">俺様のGitHub</h1>
             <hr> <!-- horizontal-->
 
             <!-- Introduce about me. -->
@@ -22,7 +24,13 @@
             <br>
             <hr>
 
-            <button onclick="document.location='link.html'">Next Page</button>
+            <button onclick="document.location='link.html#Img intro'" style="background-color: black; color: white; padding: 15px 25px;">About Image</button>
+            <button onclick="document.location='table.html'" style="background-color: black; color: white; padding: 15px 25px;">About Table</button>
+            <br>
+            <br>
+
+            <!-- href also helps to link the bookmark, even the bookmark is inside other document. -->
+            <a href="#title"><button style="background-color: black; color: white; padding: 15px 25px;">Go To Top</button></a>
 
             <!-- Name, Email, and Contact -->
             <address style="color: black; text-align: center;">
@@ -31,7 +39,7 @@
                 Written by Yong | <a href="mailto:yongqin2122@gmail.com" title="Send Email">yongqin2122@gmail.com</a> | Asus Sdn Bhd
             
             </address>
-
+            
 
         </body>
         
